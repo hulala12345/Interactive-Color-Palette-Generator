@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Color Palette Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Interactive Color Palette Generator</h1>
+ <div class="controls">
+  <label for="baseColor">Base Color:</label>
+  <input type="color" id="baseColor" value="#3498db">
+  <input type="text" id="hexInput" value="#3498db" maxlength="7">
+  <button id="generate">Generate</button>
+ </div>
+ <div id="schemes"></div>
+ <h2>Preview</h2>
+ <div id="preview">
+   <h3 class="preview-header">Header Example</h3>
+   <button class="preview-button">Button Example</button>
+ </div>
+ <h2>Export Palette</h2>
+ <div class="export-buttons">
+   <button data-format="css">CSS</button>
+   <button data-format="scss">SCSS</button>
+   <button data-format="json">JSON</button>
+   <button data-format="svg">SVG</button>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
